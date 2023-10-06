@@ -123,7 +123,7 @@ border-radius: 5px 0px 0px 0px;
 }
 
 .tree a p {
-content: "Read more";
+opacity: 0;
 }
 
 .tree a p:hover {
