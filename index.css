@@ -122,9 +122,12 @@ border-radius: 5px 0px 0px 0px;
     text-transform: uppercase;
 }
 
+.tree a p {
+opacity: 0;
+}
 
-.tree a:hover {
- p {opacity: 100%;
+.tree a p:hover {
+ opacity: 100%;
 border: 1px solid #ccc;
 border-radius: 5px;
 color: #666 ;
@@ -132,6 +135,6 @@ padding: 1rem;
 margin-bottom: 1rem;
 text-align: left;
 font-size: 14px;
-transition: 0.5s;}
+transition: 0.5s;
  }
         
