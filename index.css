@@ -122,9 +122,6 @@ border-radius: 5px 0px 0px 0px;
     text-transform: uppercase;
 }
 
-.tree a p {
-opacity: 0;
-}
 
 .tree a:hover {
  p {opacity: 100%;
