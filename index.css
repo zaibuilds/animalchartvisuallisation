@@ -145,7 +145,7 @@ display: none;
 .tree .parent {
     &:hover {
         .child {
-            display: inline;
+           display: inline;
             border: 1px solid #ccc;
             border-radius: 5px;
             color: #666 ;
