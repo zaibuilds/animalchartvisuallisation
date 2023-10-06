@@ -160,3 +160,16 @@ border-radius: 5px 0px 0px 0px;
          }
     }
 }   
+
+/* Hover Section */
+
+.tree li a:hover, .tree li a:hover img, .tree li a:hover span, .tree li a:hover+ ul li a {
+    background: #c8e4f8;
+    color: #000;
+    border-color: #afafaf;
+    box-shadow: 0px 0px 8px -5px #afafaf;
+}
+
+.tree li a:hover+ul li:after, .tree li a:hover+ul li:before, .tree li a:hover+ul:before, .tree li a:hover+ul ul:before {
+    border-color: #afafaf;;
+}
