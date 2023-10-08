@@ -41,3 +41,43 @@ clickableElements.forEach((clickableElement) => {
   });
 });
 
+// Scrolling 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const parentLinks = document.querySelectorAll('.parent');
+
+  parentLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent the default behavior of the link
+
+          // Find the <p> tag inside the clicked element
+          const paragraph = link.querySelector('p');
+
+          if (paragraph) {
+              paragraph.scrollIntoView({ behavior: 'smooth' });
+          }
+      });
+  });
+});
+
+// Scroll to Top button
+
+// script.js
+const scrollToTopButton = document.getElementById("scrollButton");
+
+// Show the button when the user scrolls down 200px from the top
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 200) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+});
+
+// Scroll to the top when the button is clicked
+scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" //Add smooth scrolling behavior
+    });
+});
