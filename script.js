@@ -8,7 +8,7 @@ clickableElements.forEach((clickableElement) => {
     // Find the corresponding child element to modify
     const element = this.querySelector(".child");
 
-    // Add or remove CSS properties or classes when the clickable element is clicked
+    // Add CSS properties or classes when the clickable element is clicked
     element.style.opacity = "1";
     element.style.height = "auto";
     element.style.border = "1px solid #8e95b4";
@@ -19,8 +19,7 @@ clickableElements.forEach((clickableElement) => {
     element.style.textAlign = "left";
     element.style.fontSize = "14px";
 
-    // Remove CSS classes from the clickable element if needed
-    // clickableElement.classList.remove("my-clicked-class");
+
   });
 
   // Add a blur event listener to each clickable element
@@ -39,8 +38,6 @@ clickableElements.forEach((clickableElement) => {
     element.style.textAlign = "";
     element.style.fontSize = "";
 
-    // Add or re-add CSS classes when the element loses focus if needed
-    // clickableElement.classList.add("my-initial-class");
   });
 });
 
