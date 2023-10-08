@@ -1,8 +1,8 @@
-// Get references to the clickable elements and the elements you want to modify
+// Get references to the clickable elements and the elements to modify
 const clickableElements = document.querySelectorAll(".parent");
 const elements = document.querySelectorAll(".child");
 
-// Loop through the clickable elements and add a click event listener to each
+// Looping through the clickable elements and add a click event listener to each
 clickableElements.forEach((clickableElement) => {
   clickableElement.addEventListener("click", function() {
     // Find the corresponding child element to modify
@@ -22,7 +22,7 @@ clickableElements.forEach((clickableElement) => {
 
   });
 
-  // Add a blur event listener to each clickable element
+  // Adding a blur event listener to each clickable element
   clickableElement.addEventListener("blur", function() {
     // Find the corresponding child element
     const element = this.querySelector(".child");
